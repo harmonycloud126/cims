@@ -40,4 +40,14 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>appointment</module>
+        <module>clinicalnote</module>
+        <module>diagnosis</module>
+        <module>drug</module>
+        <module>order</module>
+        <module>patient</module>
+        <module>user</module>
+    </modules>
+
 </project>
