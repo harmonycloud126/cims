@@ -11,7 +11,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.harmonycloud.util.StringUtil;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -37,8 +39,8 @@ public class UserService {
                 logger.info("login failed....password is wrong!");
                 return null;
             }
-            UserDto userDto = userRepository.finduser(user.getUserId());
             logger.info("login successful.....");
+            UserDto userDto = userRepository.finduser(user.getUserId());
             String token = jwtUtil.generateToken(userDto.getUserId(), userDto.getLoginName(),userDto.getRole());
             result.put("user", userDto);
             result.put("token", token);

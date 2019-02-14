@@ -12,13 +12,17 @@ import javax.persistence.*;
 public class User {
     @Id
     private Integer userId;
-
+    @Column(name = "english_surname")
     private String englishSurname;
+    @Column(name = "english_given_name")
     private String englishGivenName;
-    @Column(name = "login_name")
+    @Column(name="login_name")
     private String loginName;
+    @Column(name = "email")
     private String email;
+    @Column(name = "user_status")
     private String userStatus;
+    @Column(name = "password")
     private String password;
 
     public User() {
