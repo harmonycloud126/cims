@@ -2,6 +2,7 @@ package com.harmonycloud.entity;
 
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -10,8 +11,10 @@ import javax.persistence.Table;
  */
 
 
-
+@Entity
+@Table(name = "role")
 public class UserRole {
+    @Id
     private Integer userRoleId;
     private String userRoleName;
     private String userRoleDesc;

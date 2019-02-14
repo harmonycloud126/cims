@@ -1,13 +1,18 @@
 package com.harmonycloud.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author qidong
  * @date 2019/2/13
  */
-
+@Entity
+@Table(name = "user_role")
 public class UserUserrole {
+    @Id
     private Integer userRoleId;
     private Integer userId;
 

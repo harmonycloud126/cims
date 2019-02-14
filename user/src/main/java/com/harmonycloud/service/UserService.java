@@ -28,7 +28,7 @@ public class UserService {
         try {
 
             User user = userRepository.findByLoginName(loginname);
-            if (user == null) {
+           if (user == null) {
                 logger.info("login failed.....can't find this user for loginname is {}", loginname);
                 return null;
             }
