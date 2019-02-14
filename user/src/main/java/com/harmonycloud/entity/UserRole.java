@@ -1,10 +1,16 @@
 package com.harmonycloud.entity;
 
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * @author qidong
  * @date 2019/2/13
  */
+
+
+
 public class UserRole {
     private Integer userRoleId;
     private String userRoleName;

@@ -1,10 +1,19 @@
 package com.harmonycloud.entity;
 
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
 /**
  * @author qidong
  * @date 2019/2/13
  */
+//@Entity
+//@Table(name = "clinic")
 public class Clinic {
+//    @Id
     private Integer clinicId;
     private String clinicName;
 

@@ -1,9 +1,12 @@
 package com.harmonycloud.entity;
 
+import javax.persistence.Entity;
+
 /**
  * @author qidong
  * @date 2019/2/13
  */
+
 public class EncounterType {
     private Integer encounterTypeId;
     private String encounterType;

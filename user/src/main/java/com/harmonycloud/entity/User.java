@@ -1,12 +1,20 @@
 package com.harmonycloud.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+import org.springframework.data.annotation.Id;
 
 /**
  * @author qidong
  * @date 2019/2/13
  */
-
+@Entity
+@Table(name = "user")
 public class User {
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer userId;
     private String englishSurname;
     private String englishGivenName;
